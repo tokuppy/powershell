@@ -1,11 +1,11 @@
-ã€€function SqlExequteNonQuery($SqlCommand,$Server,$Database,$CommnadType){
+function SqlExequteNonQuery($SqlCommand,$Server,$Database,$CommnadType){
     try{
 
         $conStr = New-Object System.Data.SqlClient.SqlConnectionStringBuilder
         $conStr["Data Source"] = $Server
         $conStr["Initial Catalog"] = $Database
-        $conStr["User ID"]="*id*"
-        $conStr["Password"]="*pass*"
+        $conStr["User ID"]="sa"
+        $conStr["Password"]="sagawa"
         $conStr["Connect Timeout"] = 300
 
         $con = New-Object System.Data.SqlClient.SqlConnection
@@ -31,7 +31,7 @@
 
     catch [Exception]{
 
-        Write-Host ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½F$_
+        Write-Host ƒGƒ‰[“à—eF$_
         Pause
 
     }
@@ -52,8 +52,8 @@ function SqlExequteScalar($SqlCommand,$Server,$Database,$CommnadType){
         $conStr = New-Object System.Data.SqlClient.SqlConnectionStringBuilder
         $conStr["Data Source"] = $Server
         $conStr["Initial Catalog"] = $Database
-        $conStr["User ID"]="*id*"
-        $conStr["Password"]="*pass*"
+        $conStr["User ID"]="sa"
+        $conStr["Password"]="toku"
         $conStr["Connect Timeout"] = 300
 
         $con = New-Object System.Data.SqlClient.SqlConnection
@@ -78,7 +78,7 @@ function SqlExequteScalar($SqlCommand,$Server,$Database,$CommnadType){
 
     catch [Exception]{
 
-        Write-Host ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½F$_
+        Write-Host ƒGƒ‰[“à—eF$_
         Pause
 
     }
@@ -100,8 +100,8 @@ function SqlExequteGetData($SqlCommand,$Server,$Database,$CommnadType){
         $conStr = New-Object System.Data.SqlClient.SqlConnectionStringBuilder
         $conStr["Data Source"] = $Server
         $conStr["Initial Catalog"] = $Database
-        $conStr["User ID"]="*id*"
-        $conStr["Password"]="*pass*"
+        $conStr["User ID"]="sa"
+        $conStr["Password"]="toku"
         $conStr["Connect Timeout"] = 300
 
         $con = New-Object System.Data.SqlClient.SqlConnection
@@ -126,7 +126,7 @@ function SqlExequteGetData($SqlCommand,$Server,$Database,$CommnadType){
 
     catch [Exception]{
 
-        Write-Host ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½F$_
+        Write-Host ƒGƒ‰[“à—eF$_
         Pause
 
     }
@@ -158,7 +158,7 @@ Write-Host $result2
 }
 catch [Exception]{
 
-    Write-Host 'ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½'
-    Write-Host "ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½F$_"
+    Write-Host 'ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½'
+    Write-Host "ƒGƒ‰[“à—eF$_"
     Pause
 }
