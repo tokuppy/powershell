@@ -1,21 +1,11 @@
-@function SqlExequteNonQuery($SqlCommand,$Server,$Database,$CommnadType){
+function SqlExequteNonQuery($SqlCommand,$Server,$Database,$CommnadType){
     try{
 
         $conStr = New-Object System.Data.SqlClient.SqlConnectionStringBuilder
         $conStr["Data Source"] = $Server
         $conStr["Initial Catalog"] = $Database
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $conStr["User ID"]="sa"
-        $conStr["Password"]="sagawa"
-=======
         $conStr["User ID"]="*id*"
         $conStr["Password"]="*pass*"
->>>>>>> parent of d29023e... passå¤‰æ›´
-=======
-        $conStr["User ID"]="sa"
-        $conStr["Password"]="sagawa"
->>>>>>> parent of a53ae91... å…¬é–‹è¨­å®š
         $conStr["Connect Timeout"] = 300
 
         $con = New-Object System.Data.SqlClient.SqlConnection
@@ -41,7 +31,7 @@
 
     catch [Exception]{
 
-        Write-Host ƒGƒ‰[“à—eF$_
+        Write-Host ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½F$_
         Pause
 
     }
@@ -62,8 +52,8 @@ function SqlExequteScalar($SqlCommand,$Server,$Database,$CommnadType){
         $conStr = New-Object System.Data.SqlClient.SqlConnectionStringBuilder
         $conStr["Data Source"] = $Server
         $conStr["Initial Catalog"] = $Database
-        $conStr["User ID"]="sa"
-        $conStr["Password"]="toku"
+        $conStr["User ID"]="*id*"
+        $conStr["Password"]="*pass*"
         $conStr["Connect Timeout"] = 300
 
         $con = New-Object System.Data.SqlClient.SqlConnection
@@ -88,7 +78,7 @@ function SqlExequteScalar($SqlCommand,$Server,$Database,$CommnadType){
 
     catch [Exception]{
 
-        Write-Host ƒGƒ‰[“à—eF$_
+        Write-Host ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½F$_
         Pause
 
     }
@@ -110,8 +100,8 @@ function SqlExequteGetData($SqlCommand,$Server,$Database,$CommnadType){
         $conStr = New-Object System.Data.SqlClient.SqlConnectionStringBuilder
         $conStr["Data Source"] = $Server
         $conStr["Initial Catalog"] = $Database
-        $conStr["User ID"]="sa"
-        $conStr["Password"]="toku"
+        $conStr["User ID"]="*id*"
+        $conStr["Password"]="*pass*"
         $conStr["Connect Timeout"] = 300
 
         $con = New-Object System.Data.SqlClient.SqlConnection
@@ -136,7 +126,7 @@ function SqlExequteGetData($SqlCommand,$Server,$Database,$CommnadType){
 
     catch [Exception]{
 
-        Write-Host ƒGƒ‰[“à—eF$_
+        Write-Host ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½F$_
         Pause
 
     }
@@ -168,7 +158,7 @@ Write-Host $result2
 }
 catch [Exception]{
 
-    Write-Host 'ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½'
-    Write-Host "ƒGƒ‰[“à—eF$_"
+    Write-Host 'ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½'
+    Write-Host "ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½F$_"
     Pause
 }
