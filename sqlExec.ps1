@@ -1,4 +1,4 @@
-function SqlExequteNonQuery($SqlCommand,$Server,$Database,$CommnadType){
+Å@function SqlExequteNonQuery($SqlCommand,$Server,$Database,$CommnadType){
     try{
 
         $conStr = New-Object System.Data.SqlClient.SqlConnectionStringBuilder
