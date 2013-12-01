@@ -4,8 +4,13 @@ function SqlExequteNonQuery($SqlCommand,$Server,$Database,$CommnadType){
         $conStr = New-Object System.Data.SqlClient.SqlConnectionStringBuilder
         $conStr["Data Source"] = $Server
         $conStr["Initial Catalog"] = $Database
+<<<<<<< HEAD
         $conStr["User ID"]="sa"
         $conStr["Password"]="sagawa"
+=======
+        $conStr["User ID"]="*id*"
+        $conStr["Password"]="*pass*"
+>>>>>>> parent of d29023e... pass変更
         $conStr["Connect Timeout"] = 300
 
         $con = New-Object System.Data.SqlClient.SqlConnection
